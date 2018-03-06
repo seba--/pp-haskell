@@ -1,0 +1,20 @@
+Name:                pp-haskell
+Version:             0.2
+Synopsis:            A pretty printer for Haskell (based on haskell-src-exts).
+-- Description:         
+License:             BSD3
+License-file:        LICENSE
+Author:              Tillmann Rendel
+Maintainer:          rendel@informatik.uni-marburg.de
+-- Copyright:           
+Category:            Development
+Build-type:          Simple
+-- Extra-source-files:  
+Cabal-version:       >=1.2
+
+Executable pp-haskell
+  Main-is:             pp-haskell.hs
+  Build-depends:       base >= 4 && < 5, haskell-src-exts >= 1.11, cmdargs >= 0.9.1, template-haskell
+  Other-modules:       On
+  Hs-source-dirs:      src
+  Extensions:          TemplateHaskell, CPP
